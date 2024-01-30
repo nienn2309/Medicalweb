@@ -26,7 +26,7 @@ const Sidebar = () => {
             icon:<FaUserAlt/>
         },
         {
-            path:"/doctor/analytics",
+            path:"/doctor/bills",
             name:"Analytics",
             icon:<FaRegChartBar/>
         },
@@ -36,14 +36,9 @@ const Sidebar = () => {
             icon:<FaCommentAlt/>
         },
         {
-            path:"/doctor/product",
-            name:"Product",
+            path:"/doctor/appointment",
+            name:"Appointment",
             icon:<FaShoppingBag/>
-        },
-        {
-            path:"/doctor/productlist",
-            name:"Product List",
-            icon:<FaThList/>
         },
     ]
     return (

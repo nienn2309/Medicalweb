@@ -1,0 +1,55 @@
+
+td {
+    height: 50px;
+    vertical-align: center;
+  }
+  
+tr{
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {background-color: rgb(142, 149, 255);}
+
+tbody tr:nth-child(odd) {background-color: #f2f2f2;}
+
+.tableContainer{
+    overflow: scroll;
+    height:  500px;
+    margin-left: auto;
+
+}
+
+thead{
+  position: sticky;
+  top: -10px;
+  margin: 0 0 0 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.page{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.box{
+  display: grid;
+  margin-top: 2em;
+  padding: auto auto;
+  background-color: #bebebe;
+  height: auto;
+  border-radius: 15px;
+}
+.box2{
+  padding-left: 2%;
+  color: white;
+
+}
+
+h1 {
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+
