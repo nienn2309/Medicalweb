@@ -5,8 +5,7 @@ function DoctorDetails() {
   return (
     <div className='doctor-profile'>
         <Grid columns={2} stackable >
-
-            <Grid.Column value='1' stackable style={{ textAlign: 'center', maxWidth: '20%', marginLeft: 'auto',  marginTop: '5%' }}>
+            <Grid.Column  stackable style={{textAlign: 'center', maxWidth: '20%', marginLeft: 'auto',  marginTop: '5%' }}>
             <Segment>
                 <Image
                 style={{ marginBottom: '25px' }}
@@ -15,24 +14,22 @@ function DoctorDetails() {
                 size="small"
                 circular
                 />
-                <Grid rows={3} verticalAlign='middle'>
                 <Grid.Row>
-                    <b style={{ color: 'grey' }}>Full Name</b>
+                    <b style={{ color: 'grey' }}>Full Name: </b>
                     <div>John Lennon</div>
                 </Grid.Row>
                 <Grid.Row>
-                    <b style={{ color: 'grey' }}>IC</b>
+                    <b style={{ color: 'grey' }}>IC: </b>
                     <div>12/4/1990</div>
                 </Grid.Row>
                 <Grid.Row>
-                    <b style={{ color: 'grey' }}>Gender</b>
+                    <b style={{ color: 'grey' }}>Gender: </b>
                     <div>Male</div>
                 </Grid.Row>
-                </Grid>
             </Segment>
             </Grid.Column>
 
-            <Grid.Column value='2' style={{ maxWidth: '40%', marginRight: '10%', marginTop: '5%' }}>
+            <Grid.Column style={{ maxWidth: '40%', marginRight: '10%', marginTop: '5%' }}>
             <Segment>
                 <h2 style={{ textAlign: 'center' }}>Doctor's Full Details</h2>
 

@@ -1,5 +1,6 @@
 import React from 'react' 
 import LSstyle from './LoginSignUp.module.css'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -19,7 +20,7 @@ const Login = () => {
                     </div>
                     <button type="submit" class={LSstyle.loginbtn}>Login</button>
                     <div class={LSstyle.register}>
-                        <span>Don't have an account yet? <a href="signup.html">Sign up here</a></span>
+                        <span>Don't have an account yet? <Link to="/signup">Signup</Link></span>
                     </div>
                 </div>
             </div>

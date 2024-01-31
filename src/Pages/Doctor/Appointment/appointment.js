@@ -8,6 +8,7 @@ import {
   Table,
   Button
 } from 'semantic-ui-react';
+import "./apointmentcss.css";
 
 
 function Appointment() {
