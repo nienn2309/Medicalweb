@@ -1,24 +1,24 @@
 import React from 'react' 
-import './LoginSignUp.css'
+import LSstyle from './LoginSignUp.module.css'
 
 const Login = () => {
     return (
-        <div class="login-page">
-            <div class="wrapper">
-                <div class="login-box">
-                    <div class="login-header">
+        <div class={LSstyle.loginpage}>
+            <div class={LSstyle.wrapper}>
+                <div class={LSstyle.loginbox}>
+                    <div class={LSstyle.loginheader}>
                         <span>Login</span>
                     </div>
-                    <div class="input-box">
+                    <div class={LSstyle.inputbox}>
                         <input type="text" placeholder="Username" required></input>
                         <i class="bx bx-user icon"></i>
                     </div>
-                    <div class="input-box">
+                    <div class={LSstyle.inputbox}>
                         <input type="password" placeholder="Password" required></input>
                         <i class="bx bx-lock-alt icon"></i>
                     </div>
-                    <button type="submit" class="login-btn">Login</button>
-                    <div class="register">
+                    <button type="submit" class={LSstyle.loginbtn}>Login</button>
+                    <div class={LSstyle.register}>
                         <span>Don't have an account yet? <a href="signup.html">Sign up here</a></span>
                     </div>
                 </div>

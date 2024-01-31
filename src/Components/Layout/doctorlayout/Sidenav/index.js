@@ -6,9 +6,9 @@ import {
     FaRegChartBar,
     FaCommentAlt,
     FaShoppingBag,
-    FaThList
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import style from '../doctorstyle.module.css';
 
 
 const Sidebar = () => {
@@ -27,12 +27,12 @@ const Sidebar = () => {
         },
         {
             path:"/doctor/bills",
-            name:"Analytics",
+            name:"Bills",
             icon:<FaRegChartBar/>
         },
         {
-            path:"/doctor/comment",
-            name:"Comment",
+            path:"/doctor/treatment",
+            name:"Treatment",
             icon:<FaCommentAlt/>
         },
         {
@@ -42,19 +42,19 @@ const Sidebar = () => {
         },
     ]
     return (
-        <div className="SNcontainer">
-           <div style={{width: isOpen ? "250px" : "50px"}} className="sidebar">
-               <div className="top_section">
-                   <h3 style={{display: isOpen ? "block" : "none"}} className="logo">AuspexCare</h3>
-                   <div style={{marginLeft: isOpen ? "10px" : "0px"}} className="bars">
+        <div className={style.SNcontainer}>
+           <div style={{width: isOpen ? "250px" : "50px"}} className={style.sidebar}>
+               <div className={style.top_section}>
+                   <h3 style={{display: isOpen ? "block" : "none"}} className={style.logo}>AuspexCare</h3>
+                   <div style={{marginLeft: isOpen ? "10px" : "0px"}} className={style.bars}>
                        <FaBars onClick={toggle}/>
                    </div>
                </div>
                {
                    menuItem.map((item, index)=>(
-                       <NavLink to={item.path} key={index} className="link" activeclassName="active">
-                           <div className="icon">{item.icon}</div>
-                           <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
+                       <NavLink to={item.path} key={index} className={style.link} activeclassName={style.active}>
+                           <div className={style.icon}>{item.icon}</div>
+                           <div style={{display: isOpen ? "block" : "none"}} className={style.link_text}>{item.name}</div>
                        </NavLink>
                    ))
                }

@@ -1,11 +1,11 @@
 import Sidebar from './Sidenav'
-import './patientstyle.css';
+import pstyle from './patientstyle.module.css';
 
 function Userlayout({children}) {
     return (
-        <div className='LOcontainer'>
+        <div className={pstyle.LOcontainer}>
             <Sidebar/>
-            <div className='main'> {children} </div>
+            <div className={pstyle.main}> {children} </div>
         </div>
     );
 }

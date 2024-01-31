@@ -4,6 +4,7 @@ import {
     FaBars,
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import pstyle from '../patientstyle.module.css';
 
 
 const Sidebar = () => {
@@ -17,19 +18,19 @@ const Sidebar = () => {
         },
     ]
     return (
-        <div className="SNcontainer">
-           <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
-               <div className="top_section">
-                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
-                   <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
+        <div className={pstyle.SNcontainer}>
+           <div style={{width: isOpen ? "200px" : "50px"}} className={pstyle.sidebar}>
+               <div className={pstyle.top_section}>
+                   <h1 style={{display: isOpen ? "block" : "none"}} className={pstyle.logo}>Logo</h1>
+                   <div style={{marginLeft: isOpen ? "50px" : "0px"}} className={pstyle.bars}>
                        <FaBars onClick={toggle}/>
                    </div>
                </div>
                {
                    menuItem.map((item, index)=>(
-                       <NavLink to={item.path} key={index} className="link" activeclassName="active">
-                           <div className="icon">{item.icon}</div>
-                           <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
+                       <NavLink to={item.path} key={index} className={pstyle.link} activeclassName={pstyle.active}>
+                           <div className={pstyle.icon}>{item.icon}</div>
+                           <div style={{display: isOpen ? "block" : "none"}} className={pstyle.link_text}>{item.name}</div>
                        </NavLink>
                    ))
                }

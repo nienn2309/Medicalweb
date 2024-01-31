@@ -158,7 +158,7 @@ class RowContent extends React.Component {
                     <th>Total</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className='bill-body'>
                     <tr>
                     <td>1</td>
                     <td>chainsaw</td>

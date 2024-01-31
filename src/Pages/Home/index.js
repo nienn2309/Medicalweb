@@ -2,8 +2,8 @@ import './style.css'
 
 function Home() {
     return (
-        <div>
-            <section class="home" id="home">
+        <div className='homeover'>
+            <section class="home hsection" id="home">
                 <div class="image">
                 <img src="./image/doctors-bro.svg" alt=""/>
                 </div>
@@ -14,7 +14,7 @@ function Home() {
                 </div>
             </section>
 
-            <section class="icons-container">
+            <section class="icons-container hsection">
                 <div class="icons">
                     <i class="fas fa-user-md"></i>
                     <h3>300+</h3>
@@ -40,7 +40,7 @@ function Home() {
                 </div>
             </section>
 
-            <section class="servies" id="services">
+            <section class="servies hsection" id="services">
                 <h1 class="heading">Our <span>Services</span></h1>
                 <div class="box">
                     <i class="fas fa-notes-medical"></i>

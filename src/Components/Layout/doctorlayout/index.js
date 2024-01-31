@@ -1,11 +1,11 @@
 import Sidebar from './Sidenav'
-import './doctorstyle.css';
+import style from './doctorstyle.module.css';
 
 function DoctorLayout({children}) {
     return (
-        <div className='LOcontainer'>
+        <div className={style.LOcontainer}>
             <Sidebar/>
-            <div className='main'> {children} </div>
+            <div className={style.main}> {children} </div>
         </div>
     );
 }
