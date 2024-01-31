@@ -1,39 +1,42 @@
 
-td {
+.contact-td {
     height: 50px;
     vertical-align: center;
   }
   
-tr{
+.contact-tr{
   padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  
 }
 
-tbody tr:hover {background-color: rgb(142, 149, 255);}
+.contact-tr:hover{
+  background-color: #bebebe;
+  
+}
 
-tbody tr:nth-child(odd) {background-color: #f2f2f2;}
-
-.tableContainer{
+.contact-tableContainer{
     overflow: scroll;
     height:  500px;
     margin-left: auto;
 
 }
 
-thead{
+.contact-thead{
   position: sticky;
   top: -10px;
   margin: 0 0 0 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(161, 161, 161);
+  color: black;
 }
 
-.page{
+.contact-page{
   margin: 0 auto;
   width: 60%;
 }
 
-.box{
+.contact-box{
   display: grid;
   margin-top: 2em;
   padding: auto auto;
@@ -41,13 +44,13 @@ thead{
   height: auto;
   border-radius: 15px;
 }
-.box2{
+.contact-box2{
   padding-left: 2%;
   color: white;
 
 }
 
-h1 {
+.contact-h1 {
   padding-top: 5%;
   padding-bottom: 2%;
 }

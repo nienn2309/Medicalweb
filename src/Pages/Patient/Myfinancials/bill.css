@@ -1,8 +1,8 @@
-.page{
+.bill-page{
     margin: 0 auto;
     width: 60%;
   }
- h1 {
+.bill-h1 {
     margin-top: 5%;
     margin-bottom: 2%;
     background-color: rgb(212, 212, 212);
@@ -12,76 +12,65 @@
     font-size: 25px;
     
  }  
- .tableContainer{
-    overflow: scroll;
-    margin-left: auto;
- }
- .thead{
+ .bill-thead{
     position: sticky;
-    top: -1px;
+    top: -10px;
     margin: 0 0 0 0;
     background-color: rgb(255, 255, 255);
     text-align: center;
   }
-.no-h {
+.bill-no-h {
     align-content: 5%;
   }
   
-.hospital-h {
+.bill-hospital-h {
     width: 40%; 
   }
-.name-h{
+.bill-time-h{
     width: 40%; 
 
 }
-.plan-h{
+.bill-status-h{
     width: 15%; 
 
 }
 
-.tb-head {
+.bill-tb-head{
     text-align: center;
-    background-color: antiquewhite;
-}
-
-
-.treat-table{
-  margin: 0 auto;
-  width: 100%;
-
+    background-color: rgb(221, 221, 221);
+    border-spacing: 10px;
+    cursor: pointer;
 
 }
 
+.bill-table{
+    margin: 0 auto;
+    width: 100%;
 
-.treat-body{
-  text-align: center;
-  border-radius: 5px black;
-}
 
-.border{
-  border-radius: 5px black;
 }
 
 
+.bill-head{
+    text-align: center;
+    background-color: rgb(185, 185, 185);
+    border-spacing: 10px;
+}
+.bill-body{
+    text-align: center;
+
+}
 
 
-
-
-
-
-
-
-
-
-
-.content{
+.bill-content{
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0,1,0,1);
   }
   
-  .content.show{
+  .bill-content.show{
     height: auto;
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1,0,1,0);
   }
+

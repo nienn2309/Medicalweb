@@ -12,17 +12,32 @@ const Sidebar = () => {
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
-            path:"/patient/index",
-            name:"Dashboard",
+            path:"/patient/home",
+            name:"Medical Summary",
+            icon:<FaTh/>
+        },
+        {
+            path:"/patient/appointment",
+            name:"Appointment",
+            icon:<FaTh/>
+        },
+        {
+            path:"/patient/finance",
+            name:"My Financials",
+            icon:<FaTh/>
+        },
+        {
+            path:"/patient/treatment",
+            name:"TreatmentPlan",
             icon:<FaTh/>
         },
     ]
     return (
         <div className={pstyle.SNcontainer}>
-           <div style={{width: isOpen ? "200px" : "50px"}} className={pstyle.sidebar}>
+           <div style={{width: isOpen ? "250px" : "50px"}} className={pstyle.sidebar}>
                <div className={pstyle.top_section}>
-                   <h1 style={{display: isOpen ? "block" : "none"}} className={pstyle.logo}>Logo</h1>
-                   <div style={{marginLeft: isOpen ? "50px" : "0px"}} className={pstyle.bars}>
+                   <h1 style={{display: isOpen ? "block" : "none"}} className={pstyle.logo}>AuspexCare</h1>
+                   <div style={{marginLeft: isOpen ? "10px" : "0px"}} className={pstyle.bars}>
                        <FaBars onClick={toggle}/>
                    </div>
                </div>

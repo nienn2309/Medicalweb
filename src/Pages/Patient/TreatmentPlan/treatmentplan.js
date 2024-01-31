@@ -2,9 +2,7 @@ import "./treatment.css";
 import {useState} from 'react'
 import React, { Component } from 'react';
 
-
-
-function Treatment() {
+function TreatmentPlan() {
 
     const [selected, setSelected] = useState(null)
 
@@ -18,17 +16,17 @@ function Treatment() {
     
         
     return (
-        <div className='page'>
-            <h1>Your Treatment Detail</h1>
+        <div className='treat-page'>
+            <h1 className="treat-h1">Your Treatment Detail</h1>
             <div >
                 <table className='table'>
 
-                <thead className='thead'>
+                <thead className='treat-thead'>
                     <tr>
-                        <th className='no-h'>.No</th>
-                        <th className='hospital-h'>Hospital</th>
-                        <th className='name-h'>Doctor's Name</th>
-                        <th className='plan-h'>Date of plan</th>
+                        <th className='treat-no-h'>.No</th>
+                        <th className='treat-hospital-h'>Hospital</th>
+                        <th className='treat-name-h'>Doctor's Name</th>
+                        <th className='treat-plan-h'>Date of plan</th>
                     </tr>
                 </thead>
 
@@ -36,16 +34,16 @@ function Treatment() {
                 <tbody>
                 
                 
-                    <tr className='tb-head' onClick={() => toggle(i)}  >
-                        <th className='no-h'>{a.no}</th>
-                        <th className='hospital-h'>{a.hospital}</th>
-                        <th className='name-h'>{a.name}</th>
-                        <th className='plan-h'>{a.plan}</th>
+                    <tr className='treat-tb-head' onClick={() => toggle(i)}  >
+                        <th className='treat-no-h'>{a.no}</th>
+                        <th className='treat-hospital-h'>{a.hospital}</th>
+                        <th className='treat-name-h'>{a.name}</th>
+                        <th className='treat-plan-h'>{a.plan}</th>
                         <span>{selected === i ? '-' : '+' }</span>
                     </tr>
                     <tr>
                         <td colspan = '4' >
-                        <div  className={ selected === i ? 'content show' : 'content'}> 
+                        <div  className={ selected === i ? 'treat-content show' : 'treat-content'}> 
                             <RowContent/>
                         </div>
                         </td>
@@ -84,17 +82,17 @@ class RowContent extends React.Component {
             <table className="treat-table">
                 <tbody className="treat-body">
                 <tr>
-                    <th className="border">presenting problem</th>
-                    <th className="border">diagnosis</th>
+                    <th className="treat-border">presenting problem</th>
+                    <th className="treat-border">diagnosis</th>
                 </tr>
                     <tr>
-                    <td colspan="2" className="border">goal and objective</td>
+                    <td colspan="2" className="treat-border">goal and objective</td>
                     </tr>
                     <tr>
-                    <td colspan="2" className="border">Treatment method</td>
+                    <td colspan="2" className="treat-border">Treatment method</td>
                     </tr>
                     <tr>
-                    <td colspan="2" className="border">Doctor note</td>
+                    <td colspan="2" className="treat-border">Doctor note</td> 
                     </tr>
                 </tbody>
             </table>
@@ -103,5 +101,4 @@ class RowContent extends React.Component {
     }}
     
 
-export default Treatment;
-
+export default TreatmentPlan;

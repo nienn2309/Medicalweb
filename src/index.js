@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css"
 import GlobalStyles from './Components/GlobalStyles';
 import 'semantic-ui-css/semantic.min.css';
-import Counter from './Pages/Doctor/Bill/bill';
+import Counter from './Pages/Patient/Myfinancials/bill';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -18,17 +18,17 @@ function Bill() {
     
         
     return (
-        <div className='page'>
-            <h1>Your Bills Detail</h1>
+        <div className='bill-page'>
+            <h1 className='bill-h1'>Your Bills Detail</h1>
             <div >
                 <table className='table'>
 
-                <thead className='thead'>
+                <thead className='bill-thead'>
                     <tr>
-                        <th className='no-h'>.No</th>
-                        <th className='hospital-h'>Hospital</th>
-                        <th className='time-h'>Data & Time</th>
-                        <th className='status-h'>Status</th>
+                        <th className='bill-no-h'>.No</th>
+                        <th className='bill-hospital-h'>Hospital</th>
+                        <th className='bill-time-h'>Data & Time</th>
+                        <th className='bill-status-h'>Status</th>
                     </tr>
                 </thead>
 
@@ -36,16 +36,16 @@ function Bill() {
                 <tbody>
                 
                 
-                    <tr className='tb-head' onClick={() => toggle(i)}  >
-                        <th className='no-h'>{bill.no}</th>
-                        <th className='hospital-h'>{bill.hospital}</th>
-                        <th className='time-h'>{bill.time}</th>
-                        <th className='status-h'>{bill.status}</th>
-                        <span>{selected === i ? '-' : '+' }</span>
+                    <tr className='bill-tb-head' onClick={() => toggle(i)}  >
+                        <th className='bill-no-h'>{bill.no}</th>
+                        <th className='bill-hospital-h'>{bill.hospital}</th>
+                        <th className='bill-time-h'>{bill.time}</th>
+                        <th className='bill-status-h'>{bill.status}</th>
+                        <span>{selected === i ? '-' : '+' }</span> 
                     </tr>
                     <tr>
                         <td colspan = '4' >
-                        <div  className={ selected === i ? 'content show' : 'content'}>
+                        <div  className={ selected === i ? 'bill-content show' : 'bill-content'}>
                             <RowContent/>
                         </div>
                         </td>

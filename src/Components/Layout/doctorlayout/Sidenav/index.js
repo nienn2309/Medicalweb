@@ -21,24 +21,29 @@ const Sidebar = () => {
             icon:<FaTh/>
         },
         {
-            path:"/doctor/about",
-            name:"About",
-            icon:<FaUserAlt/>
+            path:"/doctor/wallet",
+            name:"Wallet",
+            icon:<FaTh/>
         },
         {
-            path:"/doctor/bills",
-            name:"Bills",
-            icon:<FaRegChartBar/>
+            path:"/doctor/medicalrecord",
+            name:"Medical Record",
+            icon:<FaTh/>
         },
         {
             path:"/doctor/treatment",
             name:"Treatment",
-            icon:<FaCommentAlt/>
+            icon:<FaTh/>
         },
         {
             path:"/doctor/appointment",
             name:"Appointment",
-            icon:<FaShoppingBag/>
+            icon:<FaTh/>
+        },
+        {
+            path:"/doctor/contact",
+            name:"Contact",
+            icon:<FaTh/>
         },
     ]
     return (

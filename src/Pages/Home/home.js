@@ -40,29 +40,52 @@ function Home() {
                 </div>
             </section>
 
-            <section class="servies hsection" id="services">
+            <section class="services" id="services">
                 <h1 class="heading">Our <span>Services</span></h1>
-                <div class="box">
-                    <i class="fas fa-notes-medical"></i>
-                    <h3>Free Checkups</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
-                    <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
-                </div>
+                <div class="services-container">
+                    <div class="box">
+                        <i class="fas fa-notes-medical"></i>
+                        <h3>Free Checkups</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
+                        <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
+                    </div>
 
-                <div class="box">
-                    <i class="fas fa-ambulance"></i>
-                    <h3>24/7 Ambulances</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
-                    <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
-                </div>
+                    <div class="box">
+                        <i class="fas fa-ambulance"></i>
+                        <h3>24/7 Ambulances</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
+                        <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
+                    </div>
 
-                <div class="box">
-                    <i class="fas fa-user-md"></i>
-                    <h3>Doctors</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
-                    <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
+                    <div class="box">
+                        <i class="fas fa-user-md"></i>
+                        <h3>Doctors</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
+                        <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Bed Facility</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
+                        <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-pills"></i>
+                        <h3>Medicines</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
+                        <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
+                    </div>
+
+                    <div class="box">
+                        <i class="fas fa-procedures"></i>
+                        <h3>Total Cares</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta earum animi aperiam laboriosam consectetur ipsum nisi ratione. Consequuntur quam voluptatibus recusandae ad consectetur earum reprehenderit velit sequi autem fugiat!</p>
+                        <a href="#" class="btn">Learn more <span class="fas fa-chavron-right"></span></a>
+                    </div>
                 </div>
-            </section>
+            </section>   
         </div>
     );
 }
