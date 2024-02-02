@@ -8,7 +8,8 @@ function Header() {
             <nav class ="navbar">
                 <Link to="#home">Home</Link>
                 <Link to="#service">Services</Link>
-                <Link to="#about">About</Link>
+                <Link to="#doctorList">Doctors</Link>
+                <Link to="#bookApp">Booking</Link>
                 <Link to="/login">Login/Signup</Link>
             </nav>
         </header>

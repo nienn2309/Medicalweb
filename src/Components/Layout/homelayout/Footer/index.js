@@ -1,10 +1,11 @@
-import './style.css'
+import './style.css'; // Import your CSS file
+
 function Footer() {
     return (
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
+        <footer className="footer">
+            <div className="container">
+                <div className="row" style={{ display: 'flex', flexWrap: 'nowrap' }}>
+                    <div className="footer-col">
                         <h4>company</h4>
                         <ul>
                             <li><a href="#">about us</a></li>
@@ -13,37 +14,34 @@ function Footer() {
                             <li><a href="#">affiliate program</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col">
+                    <div className="footer-col">
                         <h4>get help</h4>
                         <ul>
                             <li><a href="#">FAQ</a></li>
-                            <li><a href="#">shipping</a></li>
-                            <li><a href="#">returns</a></li>
-                            <li><a href="#">order status</a></li>
+                            <li><a href="#">refund policy</a></li>
                             <li><a href="#">payment options</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col">
-                        <h4>online shop</h4>
+                    <div className="footer-col">
+                        <h4>contact us</h4>
                         <ul>
-                            <li><a href="#">watch</a></li>
-                            <li><a href="#">bag</a></li>
-                            <li><a href="#">shoes</a></li>
-                            <li><a href="#">dress</a></li>
+                            <li><a href="#"><i className="fas fa-phone"></i> 123456789</a></li>
+                            <li><a href="https://gmail.com"><i className="fas fa-envelope"></i> clonemail@gmail.com</a></li>
+                            <li><a href="https://bit.ly/hanoilocation"><i className="fas fa-map-marker-alt"></i> Hanoi, Vietnam</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col">
+                    <div className="footer-col">
                         <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <div className="social-links">
+                            <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i className="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-       </footer>
+        </footer>
     );
 }
 

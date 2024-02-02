@@ -1,50 +1,56 @@
-.treat-page{
-    margin: 0 auto;
-    width: 60%;
-  }
- .treat-h1 {
-    margin-top: 5%;
-    margin-bottom: 2%;
-    background-color: rgb(160, 160, 160);
-    color: rgb(254, 254, 254);
-    border-radius: 8px;
-    padding-left: 50px; padding-top:15px ; padding-bottom:15px ;
-    font-size: 25px;
-    
- }  
+.treat-page {
+  margin: 0 auto;
+  width: 60%;
+}
 
-
-
- .treat-thead{
-    position: sticky;
-    top: -1px;
-    margin: 0 0 0 0;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-  }
-.treat-no-h {
-    align-content: 5%;
-  }
-  
-.treat-hospital-h {
-    width: 40%; 
-  }
-.treat-name-h{
-    width: 40%; 
+.treat-h1 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  background-color: rgb(160, 160, 160);
+  color: rgb(254, 254, 254);
+  border-radius: 8px;
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 25px;
 
 }
-.treat-plan-h{
-    width: 15%; 
+
+
+
+.treat-thead {
+  position: sticky;
+  top: -1px;
+  margin: 0 0 0 0;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.treat-no-h {
+  align-content: 5%;
+}
+
+.treat-hospital-h {
+  width: 40%;
+}
+
+.treat-name-h {
+  width: 40%;
+
+}
+
+.treat-plan-h {
+  width: 15%;
 
 }
 
 .treat-tb-head {
-    text-align: center;
-    background-color: rgb(207, 207, 207);
+  text-align: center;
+  background-color: rgb(207, 207, 207);
 }
 
 
-.treat-table{
+.treat-table {
   margin: 0 auto;
   width: 100%;
 
@@ -52,25 +58,25 @@
 }
 
 
-.treat-body{
+.treat-body {
   text-align: center;
   border-radius: 5px black;
 }
 
-.treat-border{
+.treat-border {
   border-radius: 5px black;
 }
 
 
 
-.treat-content{
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.5s cubic-bezier(0,1,0,1);
-  }
-  
-.treat-content.show{
-    height: auto;
-    max-height: 9999px;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
-  }
+.treat-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.treat-content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
