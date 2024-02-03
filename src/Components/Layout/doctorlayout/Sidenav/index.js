@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import {
     FaTh,
     FaBars,
-    FaUserAlt,
-    FaRegChartBar,
-    FaCommentAlt,
-    FaShoppingBag,
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import style from '../doctorstyle.module.css';
@@ -21,18 +17,13 @@ const Sidebar = () => {
             icon:<FaTh/>
         },
         {
-            path:"/doctor/wallet",
-            name:"Wallet",
+            path:"/doctor/information",
+            name:"Information",
             icon:<FaTh/>
         },
         {
             path:"/doctor/medicalrecord",
             name:"Medical Record",
-            icon:<FaTh/>
-        },
-        {
-            path:"/doctor/treatment",
-            name:"Treatment",
             icon:<FaTh/>
         },
         {

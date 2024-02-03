@@ -17,8 +17,8 @@ const Sidebar = () => {
             icon:<FaTh/>
         },
         {
-            path:"/patient/appointment",
-            name:"Appointment",
+            path:"/patient/treatment",
+            name:"TreatmentPlan",
             icon:<FaTh/>
         },
         {
@@ -27,8 +27,13 @@ const Sidebar = () => {
             icon:<FaTh/>
         },
         {
-            path:"/patient/treatment",
-            name:"TreatmentPlan",
+            path:"/patient/appointment",
+            name:"Appointment",
+            icon:<FaTh/>
+        },
+        {
+            path:"/patient/wallet",
+            name:"Wallet",
             icon:<FaTh/>
         },
     ]

@@ -1,4 +1,6 @@
 import { Grid, Segment, Header, Image } from 'semantic-ui-react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'semantic-ui-css/semantic.min.css';
 
 function DoctorDetails() {
     

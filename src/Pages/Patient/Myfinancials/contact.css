@@ -1,29 +1,23 @@
-
 .contact-td {
-    height: 50px;
-    vertical-align: center;
-  }
-  
-.contact-tr{
+  height: 50px;
+  vertical-align: center;
+}
+
+.contact-tr {
   padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  
-}
-
-.contact-tr:hover{
-  background-color: #bebebe;
-  
-}
-
-.contact-tableContainer{
-    overflow: scroll;
-    height:  500px;
-    margin-left: auto;
 
 }
 
-.contact-thead{
+.contact-tableContainer {
+  overflow: scroll;
+  height: 500px;
+  margin-left: auto;
+
+}
+
+.contact-thead {
   position: sticky;
   top: -10px;
   margin: 0 0 0 0;
@@ -31,12 +25,12 @@
   color: black;
 }
 
-.contact-page{
+.contact-page {
   margin: 0 auto;
   width: 60%;
 }
 
-.contact-box{
+.contact-box {
   display: grid;
   margin-top: 2em;
   padding: auto auto;
@@ -44,7 +38,8 @@
   height: auto;
   border-radius: 15px;
 }
-.contact-box2{
+
+.contact-box2 {
   padding-left: 2%;
   color: white;
 
@@ -54,5 +49,3 @@
   padding-top: 5%;
   padding-bottom: 2%;
 }
-
-

@@ -1,11 +1,11 @@
-import './style.css'
+import './styleHome.css'
 
 function Home() {
     return (
         <div className='homeover'>
             <section className="home hsection" id="home">
                 <div className="image">
-                <img src="./image/doctors-bro.svg" alt=""/>
+                    <img src="./image/doctors-bro.svg" alt=""/>
                 </div>
                 <div className="content">
                     <h3>stay safe</h3>

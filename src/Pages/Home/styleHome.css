@@ -1,17 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.homeover {
-    font-size: 80%;
+:root {
+    --green: #16a085;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: 2rem solid var(--green);
+}
+
+*{
+    font-family: 'Poppins', san-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62,5%;
     overflow: auto;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
 
-.hsection {
+.header {
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0; left:0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--green);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+.menu-btn {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--green);
+    padding: 1rem, 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+section {
     padding: 2rem 9%;
 }
 
-.hsection:nth-child(even) {
+section:nth-child(even) {
     background: #f5f5f5;
 }
 
@@ -55,12 +115,13 @@
 }
 
 .icons-container .icons {
-    border:var(--border);
+    border: .5rem solid var(--green); 
     box-shadow: var(--box-shadow);
     border-radius: .1rem;
     text-align: center;
     padding: 2.5rem;
 }
+
 
 .icons-container .icons i {
     font-size: 4.5rem;
@@ -153,6 +214,20 @@
     color: var(--light-color);
     line-height: 1.8;
     padding: 1rem 0;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col {
+        width: 100%;
+    }
 }
 
 /* new shit */

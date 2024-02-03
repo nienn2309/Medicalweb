@@ -7,7 +7,7 @@ function Header() {
             <a href="#" class="logo"><i class="fas fa-heartbeat"></i>AuspexCare</a>
             <nav class ="navbar">
                 <Link to="#home">Home</Link>
-                <Link to="#service">Services</Link>
+                <Link to="./services.js">Services</Link>
                 <Link to="#doctorList">Doctors</Link>
                 <Link to="#bookApp">Booking</Link>
                 <Link to="/login">Login/Signup</Link>
