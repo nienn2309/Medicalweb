@@ -106,10 +106,10 @@ function Home() {
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
-                            <a href="#" class="fab fa-facebook"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-instagram"></a>
-                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" className="fab fa-facebook"></a>
+                            <a href="#" className="fab fa-twitter"></a>
+                            <a href="#" className="fab fa-instagram"></a>
+                            <a href="#" className="fab fa-linkedin"></a>
                         </div>
                     </div>
                     <div className="doctorList-box">
@@ -117,10 +117,10 @@ function Home() {
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
-                            <a href="#" class="fab fa-facebook"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-instagram"></a>
-                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" className="fab fa-facebook"></a>
+                            <a href="#" className="fab fa-twitter"></a>
+                            <a href="#" className="fab fa-instagram"></a>
+                            <a href="#" className="fab fa-linkedin"></a>
                         </div>
                     </div>
                     <div className="doctorList-box">
@@ -128,10 +128,10 @@ function Home() {
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
-                            <a href="#" class="fab fa-facebook"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-instagram"></a>
-                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" className="fab fa-facebook"></a>
+                            <a href="#" className="fab fa-twitter"></a>
+                            <a href="#" className="fab fa-instagram"></a>
+                            <a href="#" className="fab fa-linkedin"></a>
                         </div>
                     </div>  
                     <div className="doctorList-box">
@@ -139,10 +139,10 @@ function Home() {
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
-                            <a href="#" class="fab fa-facebook"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-instagram"></a>
-                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" className="fab fa-facebook"></a>
+                            <a href="#" className="fab fa-twitter"></a>
+                            <a href="#" className="fab fa-instagram"></a>
+                            <a href="#" className="fab fa-linkedin"></a>
                         </div>
                     </div>
                     <div className="doctorList-box">
@@ -150,10 +150,10 @@ function Home() {
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
-                            <a href="#" class="fab fa-facebook"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-instagram"></a>
-                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" className="fab fa-facebook"></a>
+                            <a href="#" className="fab fa-twitter"></a>
+                            <a href="#" className="fab fa-instagram"></a>
+                            <a href="#" className="fab fa-linkedin"></a>
                         </div>
                     </div>
                 </div>

@@ -1,126 +1,81 @@
 import React from 'react';
-import {
-  TableRow,
-  TableHeaderCell,
-  TableHeader,
-  TableCell,
-  TableBody,
-  Table,
-  Button
-} from 'semantic-ui-react';
-import "./apointment.scss";
-//import "bootstrap/dist/css/bootstrap.min.css";
-import 'semantic-ui-css/semantic.min.css';
-
+import "./apointment.scss"; // Assuming you have your custom styles in apointment.scss
 
 function Appointment() {
   return (
-    <div className="appointment-page" style={{ marginTop: '50px'}}>
-      <Table striped style={{ width: '90%', margin: '0 auto' }}>
-        <TableHeader>
-          <TableRow>
-            <TableHeaderCell>Name</TableHeaderCell>
-            <TableHeaderCell>Birthdate</TableHeaderCell>
-            <TableHeaderCell>Phone Contacts</TableHeaderCell>
-            <TableHeaderCell>Appointment's Date</TableHeaderCell>
-            <TableHeaderCell>Reason For Visit</TableHeaderCell>
-            <TableHeaderCell>Status</TableHeaderCell>
-            <TableHeaderCell className="center-cell">Edit Appointment</TableHeaderCell>
-          </TableRow>
-        </TableHeader>
+    <div className="appointment-page" style={{ marginTop: '50px', width: '90%', margin: '0 auto' }}>
+      <table className="custom-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Birthdate</th>
+            <th>Phone Contacts</th>
+            <th>Appointment's Date</th>
+            <th>Reason For Visit</th>
+            <th>Status</th>
+            <th className="center-cell">Edit Appointment</th>
+          </tr>
+        </thead>
 
-        <TableBody>
-          <TableRow>
-            <TableCell>John Lilki</TableCell>
-            <TableCell>13/2/1999</TableCell>
-            <TableCell>0912834123</TableCell>
-            <TableCell>20/2/2024</TableCell>
-            <TableCell>Routine Check-up</TableCell>
-            <TableCell>Waiting</TableCell>
-            <TableCell className="center-cell">
-              <Button primary>Edit</Button>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>John Lilki</TableCell>
-            <TableCell>13/2/1999</TableCell>
-            <TableCell>0912834123</TableCell>
-            <TableCell>20/2/2024</TableCell>
-            <TableCell>Routine Check-up</TableCell>
-            <TableCell>Waiting</TableCell>
-            <TableCell className="center-cell">
-              <Button primary>Edit</Button>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>John Lilki</TableCell>
-            <TableCell>13/2/1999</TableCell>
-            <TableCell>0912834123</TableCell>
-            <TableCell>20/2/2024</TableCell>
-            <TableCell>Routine Check-up</TableCell>
-            <TableCell>Waiting</TableCell>
-            <TableCell className="center-cell">
-              <Button primary>Edit</Button>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>John Lilki</TableCell>
-            <TableCell>13/2/1999</TableCell>
-            <TableCell>0912834123</TableCell>
-            <TableCell>20/2/2024</TableCell>
-            <TableCell>Routine Check-up</TableCell>
-            <TableCell>Waiting</TableCell>
-            <TableCell className="center-cell">
-              <Button primary>Edit</Button>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>John Lilki</TableCell>
-            <TableCell>13/2/1999</TableCell>
-            <TableCell>0912834123</TableCell>
-            <TableCell>20/2/2024</TableCell>
-            <TableCell>Routine Check-up</TableCell>
-            <TableCell>Waiting</TableCell>
-            <TableCell className="center-cell">
-              <Button primary>Edit</Button>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>John Lilki</TableCell>
-            <TableCell>13/2/1999</TableCell>
-            <TableCell>0912834123</TableCell>
-            <TableCell>20/2/2024</TableCell>
-            <TableCell>Routine Check-up</TableCell>
-            <TableCell>Waiting</TableCell>
-            <TableCell className="center-cell">
-              <Button primary>Edit</Button>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>John Lilki</TableCell>
-            <TableCell>13/2/1999</TableCell>
-            <TableCell>0912834123</TableCell>
-            <TableCell>20/2/2024</TableCell>
-            <TableCell>Routine Check-up</TableCell>
-            <TableCell>Waiting</TableCell>
-            <TableCell className="center-cell">
-              <Button primary>Edit</Button>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>John Lilki</TableCell>
-            <TableCell>13/2/1999</TableCell>
-            <TableCell>0912834123</TableCell>
-            <TableCell>20/2/2024</TableCell>
-            <TableCell>Routine Check-up</TableCell>
-            <TableCell>Waiting</TableCell>
-            <TableCell className="center-cell">
-              <Button primary>Edit</Button>
-            </TableCell>
-          </TableRow>
-      
-        </TableBody>
-      </Table>
+        <tbody>
+          <tr>
+            <td>John Lilki</td>
+            <td>13/2/1999</td>
+            <td>0912834123</td>
+            <td>20/2/2024</td>
+            <td>Routine Check-up</td>
+            <td>Waiting</td>
+            <td className="center-cell">
+              <button className="custom-button primary">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td>John Lilki</td>
+            <td>13/2/1999</td>
+            <td>0912834123</td>
+            <td>20/2/2024</td>
+            <td>Routine Check-up</td>
+            <td>Waiting</td>
+            <td className="center-cell">
+              <button className="custom-button primary">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td>John Lilki</td>
+            <td>13/2/1999</td>
+            <td>0912834123</td>
+            <td>20/2/2024</td>
+            <td>Routine Check-up</td>
+            <td>Waiting</td>
+            <td className="center-cell">
+              <button className="custom-button primary">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td>John Lilki</td>
+            <td>13/2/1999</td>
+            <td>0912834123</td>
+            <td>20/2/2024</td>
+            <td>Routine Check-up</td>
+            <td>Waiting</td>
+            <td className="center-cell">
+              <button className="custom-button primary">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td>John Lilki</td>
+            <td>13/2/1999</td>
+            <td>0912834123</td>
+            <td>20/2/2024</td>
+            <td>Routine Check-up</td>
+            <td>Waiting</td>
+            <td className="center-cell">
+              <button className="custom-button primary">Edit</button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
     </div>
   );
 }

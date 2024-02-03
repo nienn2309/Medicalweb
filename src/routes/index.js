@@ -9,6 +9,7 @@ import MedicalRecord from "../Pages/Doctor/MedicalRecord/MedicalRecord";
 import DoctorDetails from "../Pages/Doctor/Information/information";
 import Appointment from "../Pages/Doctor/Appointment/appointment";
 import Contact from "../Pages/Doctor/Contact/contact";
+
 //Patient Pages
 import MedicalSummary from "../Pages/Patient/MedicalSummary/MedicalSummary";
 import AppointmentP from "../Pages/Patient/AppointmentP/AppointmentP";
@@ -27,6 +28,7 @@ const publicRoutes = [
     { path: '/doctor/information', component: DoctorDetails, layout: DoctorLayout},
     { path: '/doctor/appointment', component: Appointment, layout: DoctorLayout},
     { path: '/doctor/contact', component: Contact, layout: DoctorLayout},
+
     
     { path: '/patient/home', component: MedicalSummary, layout: Userlayout},
     { path: '/patient/appointment', component: AppointmentP, layout: Userlayout},

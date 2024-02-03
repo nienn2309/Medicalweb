@@ -1,6 +1,8 @@
+import React from 'react' 
 import './styleHome.css'
+import { Link } from 'react-router-dom';
 
-function Services() {
+const Services = () => {
     return (
         <div className='homeover'>
             <section className="services" id="services">

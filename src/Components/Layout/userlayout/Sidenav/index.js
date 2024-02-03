@@ -23,7 +23,7 @@ const Sidebar = () => {
         },
         {
             path:"/patient/finance",
-            name:"My Financials",
+            name:"My Finance",
             icon:<FaTh/>
         },
         {

@@ -1,0 +1,73 @@
+.doctor-profile {
+    margin-top: 5%;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 20px; /* Add padding */
+}
+
+  
+  .grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .grid-column-left {
+    flex: 1;
+    max-width: 20%;
+    margin-top: 5%;
+    text-align: center;
+    padding-right: 20px; 
+  }
+  
+  .grid-column-right {
+    flex: 2;
+    max-width: 40%;
+    margin-top: 5%;
+  }
+  
+  .segment {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .profile-image {
+    margin-bottom: 25px;
+    border-radius: 50%;
+  }
+  
+  .segment-header {
+    text-align: center;
+  }
+  
+  .info-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .sub-segment {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .sub-header {
+    color: grey;
+    margin-bottom: 25px;
+  }
+  
+  .sub-info {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+  }
+  
+.grid-column-left,
+.grid-column-right {
+    .segment {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    }
+}
+
+

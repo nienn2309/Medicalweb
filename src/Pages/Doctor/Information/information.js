@@ -1,88 +1,65 @@
-import { Grid, Segment, Header, Image } from 'semantic-ui-react';
-import "bootstrap/dist/css/bootstrap.min.css";
-import 'semantic-ui-css/semantic.min.css';
+import React from 'react';
+import "./information.scss";
 
 function DoctorDetails() {
-    
   return (
     <div className='doctor-profile'>
-        <Grid columns={2} stackable >
-            <Grid.Column  stackable style={{textAlign: 'center', maxWidth: '20%', marginLeft: 'auto',  marginTop: '5%' }}>
-            <Segment>
-                <Image
-                style={{ marginBottom: '25px' }}
-                src="./image/cat1.png"
-                className="centered"
-                size="small"
-                circular
-                />
-                <Grid.Row>
-                    <b style={{ color: 'grey' }}>Full Name: </b>
-                    <div>John Lennon</div>
-                </Grid.Row>
-                <Grid.Row>
-                    <b style={{ color: 'grey' }}>IC: </b>
-                    <div>12/4/1990</div>
-                </Grid.Row>
-                <Grid.Row>
-                    <b style={{ color: 'grey' }}>Gender: </b>
-                    <div>Male</div>
-                </Grid.Row>
-            </Segment>
-            </Grid.Column>
+      <div className="grid-container">
+        <div className="grid-column-left">
+          <div className="segment">
+            <img
+              src="./image/cat1.png"
+              className="profile-image"
+              alt="Profile"
+            />
+            <div className="info-row">
+              <b>Full Name:</b>
+              <div>John Lennon</div>
+            </div>
+            <div className="info-row">
+              <b>IC:</b>
+              <div>12/4/1990</div>
+            </div>
+            <div className="info-row">
+              <b>Gender:</b>
+              <div>Male</div>
+            </div>
+          </div>
+        </div>
 
-            <Grid.Column style={{ maxWidth: '40%', marginRight: '10%', marginTop: '5%' }}>
-            <Segment>
-                <h2 style={{ textAlign: 'center' }}>Doctor's Full Details</h2>
-
-                <Grid.Row style={{ marginTop: '30px', marginBottom: '30px' }}>
-                <Segment>
-                    <Header as="h3" color='grey' style={{ marginBottom: '25px' }}>
-                    PERSONAL DETAILS
-                    </Header>
-                    <Grid verticalAlign='middle'>
-                    <Grid.Column verticalAlign='middle'>
-                        <Grid.Row>
-                        <b style={{ color: 'grey' }}>Phone</b>
-                        <div>0291232131</div>
-                        </Grid.Row>
-                        <Grid.Row>
-                        <b style={{ color: 'grey' }}>Birthdate</b>
-                        <div>18/2/1989</div>
-                        </Grid.Row>
-                    </Grid.Column>
-                    </Grid>
-                </Segment>
-                </Grid.Row>
-
-                <Grid.Row style={{ marginTop: '30px', marginBottom: '30px' }}>
-                <Segment>
-                    <Header
-                    as="h3"
-                    color='grey'
-                    style={{ marginBottom: '25px' }}
-                    >
-                    EDUCATION DETAILS
-                    </Header>
-                    <Grid  verticalAlign='top'>
-                    <Grid.Column>
-                        <Grid.Row>
-                        <b style={{ color: 'grey' }}>Highest Qualification</b>
-                        <div>phD</div>
-                        </Grid.Row>
-                        <Grid.Row>
-                        <b style={{ color: 'grey' }}>Major</b>
-                        <div>Something</div>
-                        </Grid.Row>
-                    </Grid.Column>
-                    </Grid>
-                </Segment>
-                </Grid.Row>
-            </Segment>
-            </Grid.Column>
-            </Grid>
+        <div className="grid-column-right">
+          <div className="segment">
+            <h2 className="segment-header">Doctor's Full Details</h2>
+            <div className="info-row">
+              <div className="sub-segment">
+                <h3 className="sub-header">PERSONAL DETAILS</h3>
+                <div className="sub-info">
+                  <b>Phone</b>
+                  <div>0291232131</div>
+                </div>
+                <div className="sub-info">
+                  <b>Birthdate</b>
+                  <div>18/2/1989</div>
+                </div>
+              </div>
+            </div>
+            <div className="info-row">
+              <div className="sub-segment">
+                <h3 className="sub-header">EDUCATION DETAILS</h3>
+                <div className="sub-info">
+                  <b>Highest Qualification</b>
+                  <div>phD</div>
+                </div>
+                <div className="sub-info">
+                  <b>Major</b>
+                  <div>Something</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
   );
 }
 

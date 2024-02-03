@@ -1,14 +1,14 @@
-.container{
+.footer-container{
 	max-width: 1170px;
 	margin:auto;
 }
 
-.row{
+.footer-row{
 	display: flex;
 	flex-wrap: wrap;
 }
 
-ul{
+footer-ul{
 	list-style: none;
 }
 
@@ -44,6 +44,11 @@ ul{
 
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .footer-col ul li a{
