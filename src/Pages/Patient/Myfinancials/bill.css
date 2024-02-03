@@ -1,76 +1,82 @@
-.bill-page{
-    margin: 0 auto;
-    width: 60%;
-  }
+.bill-page {
+  margin: 0 auto;
+  width: 60%;
+}
 .bill-h1 {
-    margin-top: 5%;
-    margin-bottom: 2%;
-    background-color: rgb(212, 212, 212);
-    color: rgb(254, 254, 254);
-    border-radius: 8px;
-    padding-left: 50px; padding-top:15px ; padding-bottom:15px ;
-    font-size: 25px;
-    
- }  
- .bill-thead{
-    position: sticky;
-    top: -10px;
-    margin: 0 0 0 0;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-  }
+  margin-top: 5%;
+  margin-bottom: 2%;
+  background-color: rgb(212, 212, 212);
+  color: rgb(254, 254, 254);
+  border-radius: 8px;
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+.bill-thead {
+  position: sticky;
+  top: -10px;
+  margin: 0 0 0 0;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
 .bill-no-h {
-    align-content: 5%;
-  }
-  
+  align-content: 5%;
+}
+
 .bill-hospital-h {
-    width: 40%; 
-  }
-.bill-time-h{
-    width: 40%; 
-
+  width: 40%;
 }
-.bill-status-h{
-    width: 15%; 
-
+.bill-time-h {
+  width: 40%;
+}
+.bill-status-h {
+  width: 15%;
 }
 
-.bill-tb-head{
-    text-align: center;
-    background-color: rgb(221, 221, 221);
-    border-spacing: 10px;
-    cursor: pointer;
-
+.bill-tb-head {
+  text-align: center;
+  background-color: rgb(221, 221, 221);
+  border-spacing: 10px;
+  cursor: pointer;
 }
 
-.bill-table{
-    margin: 0 auto;
-    width: 100%;
-
-
+.bill-table {
+  margin: 0 auto;
+  width: 100%;
 }
 
-
-.bill-head{
-    text-align: center;
-    background-color: rgb(185, 185, 185);
-    border-spacing: 10px;
+.bill-head {
+  text-align: center;
+  background-color: rgb(185, 185, 185);
+  border-spacing: 10px;
 }
-.bill-body{
-    text-align: center;
-
+.bill-body {
+  text-align: center;
 }
 
+.bill-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
 
-.bill-content{
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.5s cubic-bezier(0,1,0,1);
-  }
-  
-  .bill-content.show{
-    height: auto;
-    max-height: 9999px;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
-  }
+.bill-content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
 
+.bill-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #eceeef;
+}

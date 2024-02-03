@@ -2,7 +2,6 @@ import homelayout from "../Components/Layout/homelayout";
 import DoctorLayout from "../Components/Layout/doctorlayout";
 import Userlayout from "../Components/Layout/userlayout";
 
-import Home from "../Pages/Home/home"
 //Doctor Pages
 import Dashboard from "../Pages/Doctor/Dashboard/Dashboard";
 import MedicalRecord from "../Pages/Doctor/MedicalRecord/MedicalRecord";
@@ -20,6 +19,12 @@ import Wallet from "../Pages/Patient/Wallet/wallet";
 import Login from "../Pages/LoginSignup/login"
 import Signup from "../Pages/LoginSignup/signup";
 
+//Home Page
+import Home from "../Pages/Home/home";
+import Services from '../Pages/Home/services';
+import doctorList from "../Pages/Home/doctorList";
+import bookAppoitment from "../Pages/Home/bookAppointment"
+
 const publicRoutes = [
     { path: '/', component: Home, layout: homelayout},
 
@@ -36,8 +41,13 @@ const publicRoutes = [
     { path: '/patient/treatment', component: TreatmentPlan, layout: Userlayout},
     { path: '/patient/wallet', component: Wallet, layout: Userlayout},
 
-    { path: '/login', component:Login, layout: null},
-    { path: '/signup', component:Signup, layout: null}
+    { path: '/login', component: Login, layout: null},
+    { path: '/signup', component: Signup, layout: null},
+
+    { path: '/home', component: Home, layout: homelayout },
+    { path: '/services', component: Services, layout: homelayout },
+    { path: '/doctorList', component: doctorList, layout: homelayout },
+    { path: '/bookAppointment', component: bookAppoitment, layout: homelayout }
 ];
 
 const privateRoutes = [

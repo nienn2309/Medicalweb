@@ -3,14 +3,15 @@
 }
 .main{
     width: 100%;
-    padding: 20px;
+    padding: 90px;
 }
 .sidebar{
     background: #000;
     color: #fff;
-    height: 100vh;
+    height: 110vh;
     width: 250px;
-    transition: all 0.5s;
+    transition: ease 0.5s;
+    
 }
 .top_section{
     display: flex;

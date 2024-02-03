@@ -13,7 +13,7 @@
     font-family: 'Poppins', san-serif;
     margin: 0; padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
     text-transform: capitalize;
     transition: all .2s ease-out;
     text-decoration: none;
@@ -28,7 +28,7 @@ html {
 
 .header {
     padding: 2rem 9%;
-    position: fixed;
+    position: relative;
     top: 0; left:0; right: 0;
     z-index: 1000;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
@@ -242,9 +242,9 @@ section:nth-child(even) {
     background: #fff;
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
-    border: 0.2rem solid var(--green); /* Reduced border width */
+    border: 0.2rem solid var(--green); 
     padding: 2.5rem;
-    margin: 1rem; /* Add margin to create space between boxes */
+    margin: 1rem; 
 }
 
 .heading {

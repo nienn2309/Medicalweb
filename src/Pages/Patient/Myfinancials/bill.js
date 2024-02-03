@@ -21,7 +21,7 @@ function Bill() {
         <div className='bill-page'>
             <h1 className='bill-h1'>Your Bills Detail</h1>
             <div >
-                <table className='table'>
+                <table className='bill-table'>
 
                 <thead className='bill-thead'>
                     <tr>

@@ -1,0 +1,26 @@
+.transaction-container {
+    border: 1px solid #ccc; /* Add border to the container */
+    padding: 20px;
+    margin-top: 2%;
+
+    h2 {
+        padding-bottom: 10px;
+    }
+  }
+  
+  .transaction-table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    border: 1px solid #ddd; /* Add border to table cells */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Apply box shadow to odd rows */
+  .odd-row {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

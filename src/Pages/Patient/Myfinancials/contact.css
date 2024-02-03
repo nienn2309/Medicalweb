@@ -7,14 +7,12 @@
   padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-
 }
 
 .contact-tableContainer {
   overflow: scroll;
   height: 500px;
   margin-left: auto;
-
 }
 
 .contact-thead {
@@ -42,10 +40,23 @@
 .contact-box2 {
   padding-left: 2%;
   color: white;
-
 }
 
 .contact-h1 {
   padding-top: 5%;
   padding-bottom: 2%;
+}
+
+.contact-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #eceeef;
 }

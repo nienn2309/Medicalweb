@@ -10,7 +10,7 @@ class Counter extends Component {
         <div className = 'contact-page' > 
            <h1 className='contact-h1'>Your Contact</h1>
             <div className='contact-tableContainer'>
-            <table className='table'>
+            <table className='contact-table'>
                 <thead className='contact-thead'>
                     <tr>
                         <th></th>

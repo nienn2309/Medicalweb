@@ -14,7 +14,7 @@ const DoctorCharts = () => {
     
     return (
         <div className="doctorcharts">
-          <h1 className='title'>Last 5 Months Appointment</h1>
+          <h2 className='title'>Last 5 Months Appointment</h2>
                 <ResponsiveContainer width="100%" aspect={3/1}>
                   <AreaChart
                     width={500}

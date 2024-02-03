@@ -3,7 +3,6 @@ import {useState} from 'react'
 import React, { Component } from 'react';
 
 function TreatmentPlan() {
-
     const [selected, setSelected] = useState(null)
 
     const toggle = (i) => {
@@ -12,48 +11,40 @@ function TreatmentPlan() {
         }
         setSelected(i)
     }
-  
-    
         
     return (
         <div className='treat-page'>
             <h1 className="treat-h1">Your Treatment Detail</h1>
             <div >
-                <table className='table'>
+                <table className='treat-table'>
 
-                <thead className='treat-thead'>
-                    <tr>
-                        <th className='treat-no-h'>.No</th>
-                        <th className='treat-hospital-h'>Hospital</th>
-                        <th className='treat-name-h'>Doctor's Name</th>
-                        <th className='treat-plan-h'>Date of plan</th>
-                    </tr>
-                </thead>
+                    <thead className='treat-thead'>
+                        <tr>
+                            <th className='treat-no-h'>.No</th>
+                            <th className='treat-hospital-h'>Hospital</th>
+                            <th className='treat-name-h'>Doctor's Name</th>
+                            <th className='treat-plan-h'>Date of plan</th>
+                        </tr>
+                    </thead>
 
-                {data.map((a, i) => (
-                <tbody>
-                
-                
-                    <tr className='treat-tb-head' onClick={() => toggle(i)}  >
-                        <th className='treat-no-h'>{a.no}</th>
-                        <th className='treat-hospital-h'>{a.hospital}</th>
-                        <th className='treat-name-h'>{a.name}</th>
-                        <th className='treat-plan-h'>{a.plan}</th>
-                        <span>{selected === i ? '-' : '+' }</span>
-                    </tr>
-                    <tr>
-                        <td colspan = '4' >
-                        <div  className={ selected === i ? 'treat-content show' : 'treat-content'}> 
-                            <RowContent/>
-                        </div>
-                        </td>
-                    </tr>
-                    
-                        
-                </tbody>))}
-
-                </table>
-                
+                    {data.map((a, i) => (
+                        <tbody>                       
+                            <tr className='treat-tb-head' onClick={() => toggle(i)}  >
+                                <th className='treat-no-h'>{a.no}</th>
+                                <th className='treat-hospital-h'>{a.hospital}</th>
+                                <th className='treat-name-h'>{a.name}</th>
+                                <th className='treat-plan-h'>{a.plan}</th>
+                                <span>{selected === i ? '-' : '+' }</span>
+                            </tr>
+                            <tr>
+                                <td colspan = '4' >
+                                    <div  className={ selected === i ? 'treat-content show' : 'treat-content'}> 
+                                        <RowContent/>
+                                    </div>
+                                </td>
+                            </tr>           
+                    </tbody>))}
+                </table>     
             </div>
         </div>
         
