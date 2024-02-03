@@ -1,16 +1,23 @@
 .LOcontainer{
     display:flex;
+    background-image: url('~/public/image/patient-bg.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
 }
 .main{
     width: 100%;
     padding: 20px;
 }
 .sidebar{
-    background: #000;
+    background: #16a085;
     color: #fff;
-    height: 100vh;
+    height: 110vh;
     width: 200px;
-    transition: all 0.5s;
+
+    cursor: pointer;
 }
 .top_section{
     display: flex;
@@ -44,3 +51,4 @@
 .icon, .link_text{
     font-size: 20px;
 }
+

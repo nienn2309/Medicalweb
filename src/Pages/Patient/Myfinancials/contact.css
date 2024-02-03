@@ -16,25 +16,26 @@
 }
 
 .contact-thead {
-  position: sticky;
-  top: -10px;
   margin: 0 0 0 0;
-  background-color: rgb(161, 161, 161);
+  background-color: rgba(22, 160, 133, 0.5);
   color: black;
 }
 
 .contact-page {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
+
 }
 
 .contact-box {
   display: grid;
   margin-top: 2em;
-  padding: auto auto;
-  background-color: #bebebe;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(22, 160, 133, 0.5);
   height: auto;
-  border-radius: 15px;
+
+
 }
 
 .contact-box2 {
@@ -52,6 +53,9 @@
   max-width: 100%;
   margin-bottom: 1rem;
   border-collapse: collapse;
+  border: 0.2rem solid var(--green); 
+  border-radius: 5px;
+  box-shadow: .6rem .6rem 0 rgba(22, 160, 133, 0.3);
 }
 
 .contact-table th,

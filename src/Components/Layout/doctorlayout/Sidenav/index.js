@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import {
-    FaTh,
-    FaBars,
-}from "react-icons/fa";
+import {FaBars,}from "react-icons/fa";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { MdOutlineMedicalInformation, MdMeetingRoom, MdContacts } from "react-icons/md";
+import { FaBookMedical } from "react-icons/fa6";
+
 import { NavLink } from 'react-router-dom';
 import style from '../doctorstyle.module.css';
 
@@ -14,27 +15,27 @@ const Sidebar = () => {
         {
             path:"/doctor/home",
             name:"Dashboard",
-            icon:<FaTh/>
+            icon:<LuLayoutDashboard/>
         },
         {
             path:"/doctor/information",
             name:"Information",
-            icon:<FaTh/>
+            icon:<MdOutlineMedicalInformation/>
         },
         {
             path:"/doctor/medicalrecord",
             name:"Medical Record",
-            icon:<FaTh/>
+            icon:<FaBookMedical/>
         },
         {
             path:"/doctor/appointment",
             name:"Appointment",
-            icon:<FaTh/>
+            icon:<MdMeetingRoom/>
         },
         {
             path:"/doctor/contact",
             name:"Contact",
-            icon:<FaTh/>
+            icon:<MdContacts/>
         },
     ]
     return (

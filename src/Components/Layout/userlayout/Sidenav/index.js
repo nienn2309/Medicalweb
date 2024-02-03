@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import {
-    FaTh,
-    FaBars,
-}from "react-icons/fa";
+import {FaBars,}from "react-icons/fa";
+import { MdOutlineMedicalInformation, MdMeetingRoom } from "react-icons/md";
+import { CiWallet } from "react-icons/ci";
+import { RiBillFill } from "react-icons/ri";
+import { RxActivityLog } from "react-icons/rx";
+
 import { NavLink } from 'react-router-dom';
 import pstyle from '../patientstyle.module.css';
 
@@ -14,27 +16,27 @@ const Sidebar = () => {
         {
             path:"/patient/home",
             name:"Medical Summary",
-            icon:<FaTh/>
+            icon:<MdOutlineMedicalInformation/>
         },
         {
             path:"/patient/treatment",
-            name:"TreatmentPlan",
-            icon:<FaTh/>
+            name:"Treatment Plan",
+            icon:<RxActivityLog/>
         },
         {
             path:"/patient/finance",
             name:"My Finance",
-            icon:<FaTh/>
+            icon:<RiBillFill/>
         },
         {
             path:"/patient/appointment",
             name:"Appointment",
-            icon:<FaTh/>
+            icon:<MdMeetingRoom/>
         },
         {
             path:"/patient/wallet",
             name:"Wallet",
-            icon:<FaTh/>
+            icon:<CiWallet/>
         },
     ]
     return (

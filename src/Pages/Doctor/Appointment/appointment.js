@@ -3,7 +3,9 @@ import "./apointment.scss"; // Assuming you have your custom styles in apointmen
 
 function Appointment() {
   return (
-    <div className="appointment-page" style={{ marginTop: '50px', width: '90%', margin: '0 auto' }}>
+    <div className="appointment-doctor">
+      <button className="schedule-button">Schedule an appointment</button>
+      <div className="appointment-page" style={{ marginTop: '50px', width: '90%', margin: '0 auto' }}>
       <table className="custom-table">
         <thead>
           <tr className="appointmenthead">
@@ -131,6 +133,8 @@ function Appointment() {
         </tbody>
       </table>
     </div>
+    </div>
+    
   );
 }
 

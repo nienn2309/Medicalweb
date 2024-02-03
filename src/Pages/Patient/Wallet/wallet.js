@@ -65,7 +65,7 @@ const Wallet = () => {
                             onChange={(e) => setAddAmount(e.target.value)}
                             required
                         />
-                    <button type="submit">Add to Wallet</button>
+                    <button type="submit" className="add-button">Add to Wallet</button>
                 </form>
             </div>
 

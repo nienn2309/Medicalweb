@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const MedicalSummaryContainer = styled.div`
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
     border: none; 
@@ -28,7 +28,7 @@ const RightSection = styled.div`
     border-radius: 5px;
     box-shadow: .6rem .6rem 0 rgba(22, 160, 133, 0.3);
     padding: 20px;
-    margin-left: 5px;
+    margin-left: 10%;
 `;
 
 const SectionTitle = styled.h2`

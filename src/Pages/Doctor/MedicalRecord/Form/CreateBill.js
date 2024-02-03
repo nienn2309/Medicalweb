@@ -9,8 +9,8 @@ function CreateBill() {
   const [rows, setRows] = useState([
     {name:"Paracetamon", description:"A Medicines When U Sick especially when you have a fever", price:"15.000 VND", status:"Pending"},
     {name:"Paracetamon", description:"A Medicines When U Sick especially when you have a fever", price:"15.000 VND", status:"Paid"},
-    {name:"Paracetamon", description:"A Medicines When U Sick especially when you have a fever", price:"15.000 VND", status:"Error"},
-    {name:"Paracetamon", description:"A Medicines When U Sick especially when you have a fever", price:"15.000 VND", status:"Error"},
+    {name:"Paracetamon", description:"A Medicines When U Sick especially when you have a fever", price:"15.000 VND", status:"Pending"},
+    {name:"Paracetamon", description:"A Medicines When U Sick especially when you have a fever", price:"15.000 VND", status:"Pending"},
     {name:"Paracetamon", description:"A Medicines When U Sick especially when you have a fever", price:"15.000 VND", status:"Error"},
   ]);
 

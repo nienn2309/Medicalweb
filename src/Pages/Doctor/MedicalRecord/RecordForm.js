@@ -5,7 +5,7 @@ import CreateBill from "./Form/CreateBill";
 import TreatmentPlan from "./Form/TreatmentPlan";
 
 function RecordForm() {
-  const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } = useMultiStepForm([
+  const {step, isFirstStep, isLastStep, back, next } = useMultiStepForm([
     <PInfor />,
     <MSDoc />,
     <TreatmentPlan />,

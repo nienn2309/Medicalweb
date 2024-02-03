@@ -1,16 +1,14 @@
 .appointment-page {
   margin-top: 100px;
-  background-image: url('./19366.jpg'); /* Specify the path to your image */
-  background-size: cover;
-  background-position: center;
 
 
 }
 
 .custom-table {
   width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #000; 
+  border: 0.2rem solid var(--green); 
+  border-radius: 5px;
+  box-shadow: .6rem .6rem 0 rgba(22, 160, 133, 0.3);
 }
 
 
@@ -33,7 +31,7 @@
 }
 
 .custom-table tbody tr:nth-child(even) {
-  background-color: #f2f2f2; /* Light gray background for even rows */
+  background-color: rgba(22, 160, 133, 0.1); /* Light gray background for even rows */
 }
 
 .custom-button {
@@ -44,14 +42,29 @@
 }
 
 .custom-button.primary {
-  background-color: #007bff;
+  background-color: rgba(22, 160, 133);
   color: #fff;
 }
 
 .custom-button.primary:hover {
-  background-color: #0056b3;
+  background-color: rgb(12, 148, 121)
 }
 
 .appointmenthead {
-  background-color: rgb(207, 205, 205);
+  background-color: rgba(22, 160, 133, 0.5);
+}
+
+.schedule-button {
+
+    background-color: rgba(69, 150, 134);
+    color: white; /* Adjust text color for better visibility */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Add margin below the button */
+    float: right; /* Float the button to the right */
+    margin-right: 70px;
+  
+  
 }

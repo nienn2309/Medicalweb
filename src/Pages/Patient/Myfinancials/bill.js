@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./bill.css";
 import {useState} from 'react'
 
-
-
 function Bill() {
-
     const [selected, setSelected] = useState(null)
 
     const toggle = (i) => {
@@ -14,54 +11,48 @@ function Bill() {
         }
         setSelected(i)
     }
-  
     
-        
     return (
         <div className='bill-page'>
             <h1 className='bill-h1'>Your Bills Detail</h1>
-            <div >
+            <div>
                 <table className='bill-table'>
-
-                <thead className='bill-thead'>
-                    <tr>
-                        <th className='bill-no-h'>.No</th>
-                        <th className='bill-hospital-h'>Hospital</th>
-                        <th className='bill-time-h'>Data & Time</th>
-                        <th className='bill-status-h'>Status</th>
-                    </tr>
-                </thead>
-
-                {data.map((bill, i) => (
-                <tbody>
-                
-                
-                    <tr className='bill-tb-head' onClick={() => toggle(i)}  >
-                        <th className='bill-no-h'>{bill.no}</th>
-                        <th className='bill-hospital-h'>{bill.hospital}</th>
-                        <th className='bill-time-h'>{bill.time}</th>
-                        <th className='bill-status-h'>{bill.status}</th>
-                        <span>{selected === i ? '-' : '+' }</span> 
-                    </tr>
-                    <tr>
-                        <td colspan = '4' >
-                        <div  className={ selected === i ? 'bill-content show' : 'bill-content'}>
-                            <RowContent/>
-                        </div>
-                        </td>
-                    </tr>
-                    
-                        
-                </tbody>))}
-
+                    <thead className='bill-thead'>
+                        <tr>
+                            <th className='bill-no-h'>.No</th>
+                            <th className='bill-hospital-h'>Hospital</th>
+                            <th className='bill-time-h'>Data & Time</th>
+                            <th className='bill-status-h'>Status</th>
+                        </tr>
+                    </thead>
                 </table>
-                
+
+                <table className='bill-table'>
+                    <tbody>
+                        {data.map((bill, i) => (
+                            <React.Fragment key={i}>
+                                <tr className='bill-tb-head' onClick={() => toggle(i)}>
+                                    <th className='bill-no-h'>{bill.no}</th>
+                                    <th className='bill-hospital-h'>{bill.hospital}</th>
+                                    <th className='bill-time-h'>{bill.time}</th>
+                                    <th className='bill-status-h'>{bill.status}</th>
+                                    <span>{selected === i ? '-' : '+' }</span>
+                                </tr>
+                                <tr>
+                                    <td colSpan='4'>
+                                        <div className={ selected === i ? 'bill-content show' : 'bill-content'}>
+                                            <RowContent/>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </React.Fragment>
+                        ))}
+                    </tbody>
+                </table>
             </div>
         </div>
-   
     );
-
-    }
+}
 
  
 const data = [

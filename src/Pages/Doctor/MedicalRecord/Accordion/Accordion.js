@@ -3,23 +3,23 @@ import styled from "styled-components";
 
 const AccordionContainer = styled.div`
     overflow: hidden;
-    width: 75rem; /* Set fixed width to 60rem */
-    margin: 0 auto; /* Center the container */
+    width: 75rem;
+    margin: 0 auto;
     border-radius: 0.5rem;
-    background-color: #27262c;
-    color: #f9f9f9;
+    background-color: rgba(22, 160, 133, 0.5);
+    color: black;
 
     @media (max-width: 1650px) {
-        width: 60rem;
+        width: 55rem;
     }
     @media (max-width: 1520px) {
-        width: 50rem;
+        width: 45rem;
     }
     @media (max-width: 1350px) {
-        width: 40rem;
+        width: 35rem;
     }
     @media (max-width: 1111px) {
-        width: 30rem;
+        width: 25rem;
     }
     @media (max-width: 1000px) {
         width: 100%;
@@ -30,7 +30,7 @@ const AccordionContainer = styled.div`
 const Inner = styled.div`
     position: absolute;
     padding: 1rem;
-    color: #c3c1cb;
+    color: black;
 `;
 
 const Header = styled.button`
@@ -42,9 +42,10 @@ const Header = styled.button`
     padding: 0 1rem;
     font-size: 1rem;
     text-align: left;
-    background: #212025;
+    background-color: rgba(22, 160, 133, 0.5);
     color: inherit;
     cursor: pointer;
+    border: 1px solid #4EEE94; 
 `;
 
 const HeaderIcon = styled.span`

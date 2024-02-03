@@ -8,7 +8,7 @@ function DoctorDetails() {
         <div className="grid-column-left">
           <div className="segment">
             <img
-              src="./R.gif"
+              src="./cat.png"
               className="profile-image"
               alt="Profile"
             />

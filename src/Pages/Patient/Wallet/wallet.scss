@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    background-color: white;
 
     h1 {
         text-align: center;
@@ -36,6 +37,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     form {
@@ -59,13 +61,13 @@
 
         button {
             cursor: pointer;
-            background-color: #007bff;
+            background-color: rgba(22, 160, 133);
             color: #fff;
             border: none;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: rgb(14, 138, 113);
         }
     }
 
@@ -88,10 +90,18 @@
 }
 
 .pay-button {
-    background-color: #007bff;
+    background-color: rgba(22, 160, 133);
     color: #fff;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.pay-button:hover {
+    background-color: rgb(14, 138, 113);
+}
+
+.add-button {
+    background-color: rgba(22, 160, 133);
 }
