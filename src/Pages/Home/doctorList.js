@@ -20,7 +20,7 @@ const doctorList = () =>  {
                 <h1 className="heading">Our <span>Doctors</span></h1>
                 <div className="doctorList-container">
                     <div className="doctorList-box">
-                        <img src="image/doctor-4.jpg" alt=""></img>
+                        <img src="image/doctor-6.jpg" alt=""></img>
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
@@ -31,7 +31,7 @@ const doctorList = () =>  {
                         </div>
                     </div>
                     <div className="doctorList-box">
-                        <img src="image/doctor-4.jpg" alt=""></img>
+                        <img src="image/doctor-6.jpg" alt=""></img>
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
@@ -42,7 +42,7 @@ const doctorList = () =>  {
                         </div>
                     </div>
                     <div className="doctorList-box">
-                        <img src="image/doctor-4.jpg" alt=""></img>
+                        <img src="image/doctor-6.jpg" alt=""></img>
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
@@ -53,7 +53,7 @@ const doctorList = () =>  {
                         </div>
                     </div>
                     <div className="doctorList-box">
-                        <img src="image/doctor-4.jpg" alt=""></img>
+                        <img src="image/doctor-6.jpg" alt=""></img>
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">
@@ -64,7 +64,7 @@ const doctorList = () =>  {
                         </div>
                     </div>  
                     <div className="doctorList-box">
-                        <img src="image/doctor-5.jpg" alt=""></img>
+                        <img src="image/doctor-6.jpg" alt=""></img>
                         <h3>Tran Hoang Duy Linh</h3>
                         <span>Expert Doctor</span>
                         <div className="doctor-bio">

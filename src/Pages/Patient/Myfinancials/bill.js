@@ -70,82 +70,44 @@ function Bill() {
 
  
 const data = [
-    {
-        no:'HD001',
-        hospital:'Lust layer of Hell',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-    {
-        no:'HD002',
-        hospital:'Greed layer of Hell',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
+  {
+    no: 'MR001',
+    hospital: 'City Hospital',
+    time: '6/6/2024 2:30pm',
+    status: 'Completed',
+  },
+  {
+    no: 'MR002',
+    hospital: 'Healthcare Clinic',
+    time: '6/8/2024 10:00am',
+    status: 'Scheduled',
+  },
+  {
+    no: 'MR003',
+    hospital: 'Community Medical Center',
+    time: '6/10/2024 3:45pm',
+    status: 'Cancelled',
+  },
+  {
+    no: 'MR004',
+    hospital: 'General Medical Center',
+    time: '6/12/2024 1:15pm',
+    status: 'Scheduled',
+  },
+  {
+    no: 'MR005',
+    hospital: 'Emergency Care Center',
+    time: '6/15/2024 9:30am',
+    status: 'Completed',
+  },
+  {
+    no: 'MR006',
+    hospital: 'Urgent Care Clinic',
+    time: '6/18/2024 4:00pm',
+    status: 'Scheduled',
+  },
+];
 
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-
-    {
-        no:'HD???',
-        hospital:'Unkown',
-        time:'6/6/6666 6:66pm',
-        status: 'Unpaid'
-    },
-
-    
-]
 
 class RowContent extends React.Component {
     render() {  
