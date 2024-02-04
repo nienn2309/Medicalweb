@@ -1,3 +1,15 @@
+/*
+  File: bookAppointment.js
+
+  Description:
+  This file defines the bookAppointment component, which provides a form for users to book an appointment.
+  It includes fields for the user's name, phone number, email, and the preferred appointment date.
+  The component utilizes the 'styleHome.css' stylesheet for styling and includes a link from 'react-router-dom'.
+
+  Components:
+  - bookAppointment: Functional component rendering the appointment booking form.
+*/
+
 import React from 'react';
 import './styleHome.css'
 import { Link } from 'react-router-dom';

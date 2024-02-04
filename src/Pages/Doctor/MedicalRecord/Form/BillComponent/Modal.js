@@ -1,6 +1,17 @@
 import React, { useState } from "react";
 import "./Modal.css";
+
+/**
+ * Modal component for displaying a form and handling user input.
+ *
+ * @param {Object} props - Component properties.
+ * @param {Function} props.closeModal - Function to close the modal.
+ * @param {Function} props.onSubmit - Function to handle form submission.
+ * @param {Object} props.defaultValue - Default values for form fields.
+ * @returns {JSX.Element} Modal component.
+ */
 function Modal({ closeModal, onSubmit, defaultValue }) {
+  // State to manage the form data
   const [formState, setFormState] = useState(
     defaultValue || {
       page: "",
@@ -9,8 +20,14 @@ function Modal({ closeModal, onSubmit, defaultValue }) {
     }
   );
 
+  // State to manage form validation errors
   const [errors, setErrors] = useState("");
 
+  /**
+   * Validates the form fields and sets error messages if any.
+   *
+   * @returns {boolean} - True if the form is valid, false otherwise.
+   */
   const validateForm = () => {
     if (
       formState.name &&
@@ -32,10 +49,20 @@ function Modal({ closeModal, onSubmit, defaultValue }) {
     }
   };
 
+  /**
+   * Handles changes in form input fields.
+   *
+   * @param {Object} e - Event object.
+   */
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   };
 
+  /**
+   * Handles form submission.
+   *
+   * @param {Object} e - Event object.
+   */
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -43,6 +70,7 @@ function Modal({ closeModal, onSubmit, defaultValue }) {
     closeModal();
   };
 
+  // JSX structure for the Modal component
   return (
     <div
       className="modal-container"
@@ -52,6 +80,7 @@ function Modal({ closeModal, onSubmit, defaultValue }) {
     >
       <div className="modal">
         <form>
+          {/* Form fields for name, description, price, and status */}
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input name="name" onChange={handleChange} value={formState.name} />
@@ -88,8 +117,10 @@ function Modal({ closeModal, onSubmit, defaultValue }) {
             </select>
           </div>
 
+          {/* Error message for incomplete form fields */}
           {errors && <div className="error">{`Please include: ${errors}`}</div>}
 
+          {/* Submit button */}
           <button className="Mbutton" type="submit" onClick={handleSubmit}>
             Submit
           </button>

@@ -1,3 +1,14 @@
+/*
+  File: DoctorCharts.js
+
+  Description:
+  This file defines the DoctorCharts component, displaying a responsive area chart representing the last 5 months' appointment data.
+  The component uses the 'DoctorCharts.scss' stylesheet for styling.
+
+  Components:
+  - DoctorCharts: Functional component rendering the area chart.
+*/
+
 import './DoctorCharts.scss';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 

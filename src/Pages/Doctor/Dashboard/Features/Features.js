@@ -1,3 +1,14 @@
+/*
+  File: Features.js
+
+  Description:
+  This file defines the Features component, showcasing various statistics related to appointments and payments.
+  The component uses the 'Features.scss' stylesheet for styling and includes the 'CircularProgressbar' component for visualization.
+
+  Components:
+  - Features: Functional component rendering various statistics and a circular progress bar.
+*/
+
 import './Features.scss'
 import {CircularProgressbar} from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'

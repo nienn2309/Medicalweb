@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Styled component for the container of the patient information form
 const PatientForm = styled.div`
     max-width: 600px;
     margin: auto;
@@ -9,11 +10,13 @@ const PatientForm = styled.div`
     border-radius: 5px;
 `;
 
+// Styled component for form labels
 const FormLabel = styled.label`
     display: block;
     margin-bottom: 10px;
 `;
 
+// Styled component for text input fields
 const FormInput = styled.input`
     width: 100%;
     padding: 8px;
@@ -22,6 +25,7 @@ const FormInput = styled.input`
     box-sizing: border-box;
 `;
 
+// Styled component for select dropdowns
 const FormSelect = styled.select`
     width: 100%;
     padding: 8px;
@@ -30,6 +34,7 @@ const FormSelect = styled.select`
     box-sizing: border-box;
 `;
 
+// Styled component for textareas in the form
 const FormTextArea = styled.textarea`
     width: 100%;
     padding: 8px;
@@ -38,11 +43,16 @@ const FormTextArea = styled.textarea`
     box-sizing: border-box;
 `;
 
+// React functional component representing the patient information form
 function PInfor() {
     return (
         <PatientForm>
+            {/* Heading for the Patient Information section */}
             <h1>Patient Information</h1>
+
+            {/* Form for entering patient information */}
             <form>
+                {/* Form fields for personal information */}
                 <FormLabel>
                     First Name:
                     <FormInput type="text" name="firstName" />
@@ -57,20 +67,26 @@ function PInfor() {
                 </FormLabel>
                 <FormLabel>
                     Gender:
+                    {/* Dropdown for selecting gender */}
                     <FormSelect name="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </FormSelect>
                 </FormLabel>
+
+                {/* Form fields for contact information */}
                 <FormLabel>
                     Address:
                     <FormInput type="text" name="address" />
                 </FormLabel>
                 <FormLabel>
                     Contact Info:
+                    {/* Input fields for phone and email */}
                     <FormInput type="tel" name="phone" placeholder="Phone" />
                     <FormInput type="email" name="email" placeholder="Email" />
                 </FormLabel>
+
+                {/* Form fields for medical history */}
                 <FormLabel>
                     Allergies:
                     <FormTextArea name="allergies"></FormTextArea>
@@ -88,4 +104,5 @@ function PInfor() {
     );
 }
 
+// Export the component
 export default PInfor;

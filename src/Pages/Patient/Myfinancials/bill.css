@@ -94,3 +94,17 @@
   vertical-align: top;
   border-top: 1px solid #eceeef;
 }
+
+.bill-table .bill-head {
+  background-color: rgb(255, 255, 255);
+  border: 0.2rem solid var(--green); 
+  border-radius: 5px;
+  box-shadow: .6rem .6rem 0 rgba(22, 160, 133, 0.3);
+}
+
+.bill-table .bill-body {
+  background-color: rgb(255, 255, 255);
+  border: 0.2rem solid var(--green); 
+  border-radius: 5px;
+  box-shadow: .6rem .6rem 0 rgba(22, 160, 133, 0.3);
+}

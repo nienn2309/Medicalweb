@@ -1,3 +1,16 @@
+/*
+  File: TransactionTable.js
+  Author: [Your Name]
+  Date: [Date]
+
+  Description:
+  This file defines the TransactionTable component, rendering a table of transaction data.
+  The component uses the 'Transaction.scss' stylesheet for styling.
+
+  Components:
+  - TransactionTable: Functional component rendering a table of transaction data.
+*/
+
 import React from 'react';
 import './Transaction.scss'; 
 

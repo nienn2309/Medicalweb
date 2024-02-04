@@ -1,3 +1,19 @@
+/*
+  File: MedicalSummary.js
+
+  Description:
+  This file defines the MedicalSummary component, which presents a medical summary for a patient. 
+  It includes sections for patient information, vital signs, past medical history, and diagnostic test results.
+  The component utilizes styled-components for styling, providing a visually appealing layout.
+  Patient information can be edited and saved using the 'Edit Personal Information' button. The data is initially
+  displayed as read-only and can be edited when the button is clicked.
+
+  Components:
+  - MedicalSummary: Functional component managing the overall layout and state.
+    It includes two sections, one for patient information and another for medical summary.
+  - Styled Components: Various styled components used for layout, form elements, and buttons.
+*/
+
 import React, { useState } from 'react';
 import styled from 'styled-components';
 

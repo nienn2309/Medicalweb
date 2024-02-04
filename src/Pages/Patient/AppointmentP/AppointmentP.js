@@ -1,4 +1,17 @@
-// AppointmentPage.js
+/*
+  File: AppointmentP.js
+
+  Description:
+  This file defines the AppointmentPage component, allowing users to make an appointment. It features a styled
+  form with fields for name, birthdate, phone contacts, appointment date, reason for visit, and status.
+  The form data is managed using React state, and the submission logic can be customized to handle data accordingly.
+  Styled-components are utilized for styling, providing a visually appealing layout.
+
+  Components:
+  - AppointmentPage: Functional component managing the appointment form layout and submission logic.
+  - Styled Components: Various styled components used for layout, form elements, and buttons.
+*/
+
 import React, { useState } from 'react';
 import styled from 'styled-components';
 

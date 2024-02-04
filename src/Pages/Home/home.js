@@ -1,3 +1,17 @@
+/*
+  File: Home.js
+  Author: [Your Name]
+  Date: [Date]
+
+  Description:
+  This file defines the Home component, representing the home section of a healthcare website. 
+  It includes a welcome message, a brief description of the healthcare services offered, and some key statistics.
+  The component utilizes the 'styleHome.css' stylesheet for styling.
+
+  Components:
+  - Home: Functional component rendering the home section.
+*/
+
 import './styleHome.css'
 
 function Home() {

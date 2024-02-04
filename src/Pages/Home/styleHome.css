@@ -231,7 +231,7 @@ section:nth-child(even) {
     }
 }
 
-/* new shit */
+/* style for service page */
 .services .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -280,6 +280,7 @@ section:nth-child(even) {
     line-height: 1.5;
 }
 
+/* style for doctor list page */
 .doctorList .doctorList-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -338,6 +339,7 @@ section:nth-child(even) {
     box-shadow: var(--box-shadow);
 }
 
+/* style for book appointment page */
 .bookApp .bookApp-row {
     display: flex;
     align-items: center;

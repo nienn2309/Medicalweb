@@ -1,3 +1,17 @@
+/*
+  File: Bill.js
+
+  Description:
+  This file defines the Bill component, which displays details about a user's bills. It includes a table
+  showing information such as bill number, hospital, date & time, and payment status. Each row in the table
+  can be toggled to reveal additional details using the RowContent component. The bill data is provided through
+  the 'data' array.
+
+  Components:
+  - Bill: Functional component managing the overall layout and state.
+  - RowContent: Class component rendering additional details for each bill row.
+*/
+
 import React from 'react';
 import "./bill.css";
 import {useState} from 'react'
@@ -36,7 +50,7 @@ function Bill() {
                                     <th className='bill-hospital-h'>{bill.hospital}</th>
                                     <th className='bill-time-h'>{bill.time}</th>
                                     <th className='bill-status-h'>{bill.status}</th>
-                                    <span>{selected === i ? '-' : '+' }</span>
+                                    <th><span>{selected === i ? '-' : '+' }</span></th>
                                 </tr>
                                 <tr>
                                     <td colSpan='4'>
@@ -134,51 +148,47 @@ const data = [
 ]
 
 class RowContent extends React.Component {
-    render(){
-      
-      return (
-        <div>
-            <table className='bill-table'>
-                <thead className='bill-head'>
-                    <tr>
-                    <th>.No</th>
-                    <th>Item</th>
-                    <th>Unit</th>
-                    <th>Quantity</th>
-                    <th>Unit Price</th>
-                    <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody className='bill-body'>
-                    <tr>
-                    <td>1</td>
-                    <td>chainsaw</td>
-                    <td>vnd</td>
-                    <td>2</td>
-                    <td>5.000.000</td>
-                    <td>10.000.000</td>
-                    </tr>
+    render() {  
+        return (
+            <div>
+                <table className='bill-table'>
+                    <thead className='bill-head'>
+                        <tr>
+                        <th>.No</th>
+                        <th>Item</th>
+                        <th>Unit</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                        </tr>
+                    </thead>
 
-                    <tr>
-                    <td colspan="6">
-                        <th>Total bill;10.000.000vnd</th>
-                        <th>Tax 1%: 1</th>
-                        <th>Total bill with tax:1.000.001vnd</th>
+                    <tbody className='bill-body'>
+                        <tr>
+                        <td>1</td>
+                        <td>chainsaw</td>
+                        <td>vnd</td>
+                        <td>2</td>
+                        <td>5.000.000</td>
+                        <td>10.000.000</td>
+                        </tr>
 
-                    </td>
-                    </tr>
-                    <tr>
-                    <td colspan="6">Total bill with tax in text</td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                        <td colspan="6">
+                            <th>Total bill;10.000.000vnd</th>
+                            <th>Tax 1%: 1</th>
+                            <th>Total bill with tax:1.000.001vnd</th>
 
-          </div>
-      )
+                        </td>
+                        </tr>
+                        <tr>
+                        <td colspan="6">Total bill with tax in text</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        )
     }
 }
 
-
-
 export default Bill;
-

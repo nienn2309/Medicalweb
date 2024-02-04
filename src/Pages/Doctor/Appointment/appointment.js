@@ -1,3 +1,15 @@
+/*
+  File: Appointment.js
+
+  Description:
+  This file defines the Appointment component, displaying a list of appointments in a table format. 
+  It includes information such as Name, Birthdate, Phone Contacts, Appointment's Date, Reason For Visit, Status, and an Edit Appointment button.
+  The component uses the 'apointment.scss' stylesheet for styling.
+
+  Components:
+  - Appointment: Functional component rendering the appointment list.
+*/
+
 import React from 'react';
 import "./apointment.scss"; // Assuming you have your custom styles in apointment.scss
 

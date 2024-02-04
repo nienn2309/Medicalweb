@@ -1,3 +1,17 @@
+/*
+  File: Wallet.js
+  Author: [Your Name]
+  Date: [Date]
+
+  Description:
+  This file defines the Wallet component, which represents a patient's wallet. It displays the wallet balance,
+  transaction history, billing reminders, and payment reminders. Users can add funds to their wallet and pay billing
+  reminders. The component uses React state to manage wallet-related data and styled with the 'wallet.scss' stylesheet.
+
+  Components:
+  - Wallet: Functional component managing wallet-related data and interactions.
+*/
+
 import React, { useState } from 'react';
 import './wallet.scss'; 
 

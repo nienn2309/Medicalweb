@@ -1,3 +1,17 @@
+/*
+  File: Services.js
+  Author: [Your Name]
+  Date: [Date]
+
+  Description:
+  This file defines the Services component, presenting various healthcare services offered by the medical institution. 
+  It includes information about free checkups, 24/7 ambulances, doctors, bed facilities, medicines, total care services, medical pumps, medical consultations, and home healthcare.
+  The component uses the 'styleHome.css' stylesheet for styling.
+
+  Components:
+  - Services: Functional component rendering the services section.
+*/
+
 import React from 'react';
 import './styleHome.css'
 import { Link } from 'react-router-dom';

@@ -50,12 +50,16 @@ const Signup = () => {
                         <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                         <i class="bx bx-user icon"></i>
                     </div>
-                    <div class={LSstyle.inputbox}>
-                        <select class={LSstyle.selection}>
-                            {options.map(option => (
-                                <option value = {option.value}>{option.label}</option>
-                            ))}
-                        </select>
+                    <div className={LSstyle.inputbox}>
+                        <div className={LSstyle.selectionContainer}>
+                            <select className={LSstyle.selection} value={role} onChange={handleRoleChange}>
+                                {options.map(option => (
+                                    <option key={option.value} value={option.label}>
+                                        {option.label}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
                     </div>
                     <div class={LSstyle.inputbox}>
                         <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
