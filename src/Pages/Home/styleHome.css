@@ -384,4 +384,5 @@ section:nth-child(even) {
 
 .bookApp .bookApp-row form .home-btn {
     padding: 1rem 3rem;
+    border: none;
 }

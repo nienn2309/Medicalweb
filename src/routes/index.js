@@ -23,7 +23,7 @@ import Signup from "../Pages/LoginSignup/signup";
 import Home from "../Pages/Home/home";
 import Services from '../Pages/Home/services';
 import doctorList from "../Pages/Home/doctorList";
-import bookAppoitment from "../Pages/Home/bookAppointment"
+import bookAppointment from "../Pages/Home/bookAppointment"
 
 const publicRoutes = [
     { path: '/', component: Home, layout: homelayout},
@@ -47,7 +47,7 @@ const publicRoutes = [
     { path: '/home', component: Home, layout: homelayout },
     { path: '/services', component: Services, layout: homelayout },
     { path: '/doctorList', component: doctorList, layout: homelayout },
-    { path: '/bookAppointment', component: bookAppoitment, layout: homelayout }
+    { path: '/bookAppointment', component: bookAppointment, layout: homelayout }
 ];
 
 const privateRoutes = [
